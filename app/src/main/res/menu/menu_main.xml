@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:title="One"
+        android:icon="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <item
+        android:title="Two"
+        android:icon="@drawable/abc_ic_menu_cut_mtrl_alpha"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <item
+        android:title="Three"
+        android:icon="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+</menu>

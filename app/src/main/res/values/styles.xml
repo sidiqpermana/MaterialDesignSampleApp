@@ -1,0 +1,8 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>  <!-- Light Indigo -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>  <!-- Dark Indigo -->
+        <item name="colorAccent">@color/accent</item>  <!-- Magenta -->
+    </style>
+</resources>
