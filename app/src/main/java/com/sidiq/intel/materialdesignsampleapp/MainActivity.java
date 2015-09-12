@@ -22,6 +22,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private CollapsingToolbarLayout ctb;
@@ -43,6 +44,22 @@ public class MainActivity extends AppCompatActivity {
        /* Bottom toolbar. */
         Toolbar bottomToolbar = (Toolbar) findViewById(R.id.bottom_toolbar);
         bottomToolbar.inflateMenu(R.menu.menu_main);
+        bottomToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                String message = null;
+                if (item.getItemId() == R.id.action_copy){
+                    message = "Copy clicked";
+                }else if (item.getItemId() == R.id.action_cut){
+                    message = "Cut clicked";
+                }else if (item.getItemId() == R.id.action_record){
+                    message = "Record clicked";
+                }
+
+                Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         recyclerView.setHasFixedSize(true);
